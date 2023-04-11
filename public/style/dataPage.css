@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
 
 
 /* width */
@@ -85,7 +85,7 @@ h1 {
     animation: drop 0.9s;
 }
 h2 {
-    font-family: Trocchi;
+    font-family: "Trocchi";
     font-size: 1rem;
     width: 100%;
     text-align: start;
