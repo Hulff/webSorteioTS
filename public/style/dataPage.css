@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #515151;
+    border-radius: 0.5vh;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #414141;
+  }
+
+@keyframes drop {
+    0% {
+        top:-20vh;
+    }
+    100% {
+        top:0
+    }
+}
+@keyframes size{
+    0% {
+        width:10%;
+    }
+    100% {
+        width:100%
+    }
+}
+@keyframes swipe {
+    0% {
+        left:-20vh;
+    }
+    100% {
+        left:0
+    }
+}
+
+
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    height: 100vh;
+    background-image: url(https://i.ibb.co/7vmwwWn/1-Seguir-a-p-gina-2-Curtir-a-publica-o-do-sorteio-3-Marcar-dois-amigos-nos-coment-rios.png);
+}
+html {
+    font-family: "Roboto", sans-serif;
+    min-height: 100%;
+}
+.divData {
+    animation: swipe 0.5s;
+    position: relative;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 1vh;
+    margin: 2vw;
+    padding: 3vw 5vw;
+}
+h1 {
+    text-align: center;
+    font-family: "Trocchi";
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: drop 0.9s;
+}
+h2 {
+    font-family: Trocchi;
+    font-size: 1rem;
+    width: 100%;
+    text-align: start;
+}
+h3 {
+    font-family: "Trocchi";
+  padding: 2% 4%;
+  width: 100%;
+  border-radius: 1vh;
+  border-style: none;
+}
+main {
+    display: flex;
+    margin-bottom: 5vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.titleImg {
+    margin-top: 0.6rem;
+    position: relative;
+    width: 16rem;
+    object-fit: cover;
+    object-position: 66% 48%;
+    height: 5rem;
+    animation: drop 0.9s;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw 5vw 3vw 5vw;
+    background: #7e7e7e3e;
+    margin: 0 25vw;
+    border-radius: 3vh;
+    color: black;
+    background-size: cover;
+    background-image: url(https://i.ibb.co/6NBYBwB/fdudihgu9hi.png);
+}
+form > input {
+    padding: 0.3rem;
+    margin: 4% 0;
+    width: 100%;
+    border-radius: 1vh;
+    animation: size 0.9s;
+}
+form > h3 {
+    margin: 2% 2% 0 2%;
+    font-size: 0.8rem;
+}
+form > h2 {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 2% 0 0% 0;
+  width: 100%;
+}
+ a {
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1vh 2rem;
+    color: white;
+    background-color: rgb(127 77 235);
+    border: none;
+    margin: 2vh 0 3vh 0;
+    border-radius: 1vh;
+    transition: padding 0.3s,background-color 1s;
+}
+ a:hover {
+    cursor: pointer;
+    padding: 1vh 3rem;
+    background-color: rgb(85, 51, 159);
+}
+
+
+footer > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+footer > ul > li {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width:2000px) {
+    form {
+        margin: 0 30vw;
+        padding: 1vw 7vw 6vw 7vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    form {
+        margin: 0 30vw;
+        padding: 1vw 7vw 5vw 7vw;
+    }
+}
+@media screen and (max-width:900px) {
+    form {
+        margin: 0 25vw;
+        padding: 1vw 7vw 3vw 7vw;
+    }
+}
+@media screen and (max-width:700px) {
+    form {
+        margin: 0 20vw;
+        padding: 1vw 7vw 3vw 7vw;
+    }
+}
+@media screen and (max-width:600px) {
+    form {
+        margin: 0 15vw;
+        padding: 1vw 7vw 3vw 7vw;
+    }
+}
+@media screen and (max-width:400px) {
+    form {
+        margin: 0 11vw;
+        padding: 3vw 8vw 6vw 8vw;
+    }
+    form > h2 {
+        font-size: 0.6rem;
+        text-align: start;
+        margin: 3% 0 0% 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:300px) {
+    form {
+        margin: 0 11vw;
+        padding: 4vw 8vw 6vw 8vw;
+    }
+    form > h2 {
+        font-size: 0.6rem;
+        text-align: start;
+        margin: 3% 0 0% 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 0.9rem;
+    }
+}
