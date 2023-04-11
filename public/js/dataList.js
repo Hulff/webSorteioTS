@@ -1,7 +1,6 @@
 let link = "https://web-sorteio-ts.vercel.app/getData"
 let main = document.getElementById("main")
 let h1 = document.getElementById("h1")
-link = link+"getData"
 console.log(link)
 
 function searchData() {
