@@ -1,4 +1,4 @@
-let link = window.location.href.slice(0,34)
+let link = "https://web-sorteio-ts.vercel.app/getData"
 let main = document.getElementById("main")
 let h1 = document.getElementById("h1")
 link = link+"getData"
